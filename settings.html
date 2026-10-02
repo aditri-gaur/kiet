@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+
+                <div class="dashboard-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <h2>Dashboard</h2>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">⌂</span>
+                    <span>Home</span>
+                </a>
+
+                <a href="analytics.html" class="nav-item">
+                    <span class="nav-icon">▥</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="users.html" class="nav-item">
+                    <span class="nav-icon">♟</span>
+                    <span>Users</span>
+                </a>
+
+                <a href="settings.html" class="nav-item active">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    class="search"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-circle">
+                    👤
+                </div>
+
+                <span>Admin</span>
+
+                <span class="dropdown">
+                    ⌄
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+
+            <!-- ================= PAGE HEADER ================= -->
+
+            <section class="page-header">
+
+                <h1>Settings</h1>
+
+                <p>
+                    Customize your dashboard and account preferences.
+                </p>
+
+            </section>
+
+
+
+            <!-- ================= ACCOUNT SETTINGS ================= -->
+
+            <section class="panel chart-panel">
+
+                <div class="panel-heading">
+
+                    <span>
+                        👤
+                    </span>
+
+                    <h3>
+                        Account Settings
+                    </h3>
+
+                </div>
+
+
+                <div class="settings-group">
+
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h5>Email Notifications</h5>
+
+                            <p>
+                                Receive notifications and account updates through email.
+                            </p>
+
+                        </div>
+
+                        <button type="button" class="toggle active" aria-pressed="true" aria-label="Toggle email notifications"></button>
+
+                    </div>
+
+
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h5>Two-Factor Authentication</h5>
+
+                            <p>
+                                Add an extra layer of security to your account.
+                            </p>
+
+                        </div>
+
+                        <button type="button" class="toggle" aria-pressed="false" aria-label="Toggle two-factor authentication"></button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= PREFERENCES ================= -->
+
+            <section class="panel chart-panel" style="margin-top: 22px;">
+
+                <div class="panel-heading">
+
+                    <span>
+                        ⚙
+                    </span>
+
+                    <h3>
+                        Preferences
+                    </h3>
+
+                </div>
+
+
+                <div class="settings-group">
+
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h5>Language</h5>
+
+                            <p>
+                                Choose your preferred dashboard language.
+                            </p>
+
+                        </div>
+
+                        <select class="settings-select" aria-label="Dashboard language">
+
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="setting-item">
+
+                        <div class="setting-info">
+
+                            <h5>Auto Refresh</h5>
+
+                            <p>
+                                Automatically refresh analytics data.
+                            </p>
+
+                        </div>
+
+                        <button type="button" class="toggle active" aria-pressed="true" aria-label="Toggle auto refresh"></button>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="save-btn">
+                    Save Changes
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // Toggle switches
+
+        const toggles = document.querySelectorAll(".toggle");
+
+        toggles.forEach(toggle => {
+
+            toggle.addEventListener("click", () => {
+
+                const isActive = toggle.classList.toggle("active");
+
+                toggle.setAttribute("aria-pressed", isActive);
+
+            });
+
+        });
+
+
+        // Save button feedback
+
+        const saveBtn = document.querySelector(".save-btn");
+
+        if (saveBtn) {
+
+            saveBtn.addEventListener("click", () => {
+
+                alert("Settings saved successfully!");
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

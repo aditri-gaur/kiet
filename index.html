@@ -1,30 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning JS</title>
+
+    <title>Responsive Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Learning JS</h1>
-        <h1 class="c e">Another Heading</h1>
+    <div class="dashboard">
 
-        <h2>Learning JS</h2>
-        <h2>Learning HTML</h2>
-    </header>
-    <table>
-        <tr>
-            <th>Heading 1</th>
-            <th>Heading 2</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-        </tr>
-    <script src="index.js"></script>
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+
+                <div class="dashboard-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <h2>Dashboard</h2>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon">⌂</span>
+                    <span>Home</span>
+                </a>
+
+                <a href="analytics.html" class="nav-item">
+                    <span class="nav-icon">▥</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="users.html" class="nav-item">
+                    <span class="nav-icon">♟</span>
+                    <span>Users</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    class="search"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-circle">
+                    👤
+                </div>
+
+                <span>Admin</span>
+
+                <span class="dropdown">
+                    ⌄
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <section class="welcome">
+
+                <h1>Dashboard</h1>
+
+                <p>
+                    Welcome back, Admin!
+                </p>
+
+            </section>
+
+
+
+            <!-- ================= CARDS ================= -->
+
+            <section class="cards">
+
+
+                <!-- USERS CARD -->
+
+                <div class="card users-card">
+
+                    <div class="card-top">
+
+                        <div class="card-icon users-icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <p class="card-title">
+                                Users
+                            </p>
+
+                            <h2>
+                                1200
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="growth">
+
+                        <span>
+                            ↗ +8%
+                        </span>
+
+                        <small>
+                            from last month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REVENUE CARD -->
+
+                <div class="card revenue-card">
+
+                    <div class="card-top">
+
+                        <div class="card-icon revenue-icon">
+                            ₹
+                        </div>
+
+                        <div>
+
+                            <p class="card-title">
+                                Revenue
+                            </p>
+
+                            <h2>
+                                ₹45,000
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="growth">
+
+                        <span>
+                            ↗ +12%
+                        </span>
+
+                        <small>
+                            from last month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ORDERS CARD -->
+
+                <div class="card orders-card">
+
+                    <div class="card-top">
+
+                        <div class="card-icon orders-icon">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <p class="card-title">
+                                Orders
+                            </p>
+
+                            <h2>
+                                320
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="growth">
+
+                        <span>
+                            ↗ +6%
+                        </span>
+
+                        <small>
+                            from last month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GROWTH CARD -->
+
+                <div class="card growth-card">
+
+                    <div class="card-top">
+
+                        <div class="card-icon growth-icon">
+                            ↗
+                        </div>
+
+                        <div>
+
+                            <p class="card-title">
+                                Growth
+                            </p>
+
+                            <h2>
+                                +12%
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="growth">
+
+                        <span>
+                            ↗ +2%
+                        </span>
+
+                        <small>
+                            from last month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= CHART + ACTIVITY ================= -->
+
+            <section class="content-grid">
+
+
+                <!-- ================= CHART PANEL ================= -->
+
+                <div class="panel chart-panel">
+
+                    <div class="panel-heading">
+
+                        <span>
+                            ▥
+                        </span>
+
+                        <h3>
+                            Chart Area
+                        </h3>
+
+                    </div>
+
+
+                    <!-- ACTUAL CHART -->
+
+                    <div class="chart">
+
+                        <div class="chart-content">
+
+
+                            <div class="chart-bars">
+
+                                <span class="bar bar-1"></span>
+
+                                <span class="bar bar-2"></span>
+
+                                <span class="bar bar-3"></span>
+
+                                <span class="bar bar-4"></span>
+
+                                <span class="bar bar-5"></span>
+
+                                <span class="bar bar-6"></span>
+
+                            </div>
+
+
+                            <p>
+                                Sales chart will appear here
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- IMPORTANT: Chart panel closes here -->
+
+
+
+                <!-- ================= RECENT ACTIVITY ================= -->
+
+                <div class="panel activity-panel">
+
+                    <div class="panel-heading">
+
+                        <span>
+                            ▣
+                        </span>
+
+                        <h3>
+                            Recent Activity
+                        </h3>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+
+                        <!-- Activity 1 -->
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon green">
+                                🛒
+                            </div>
+
+                            <p>
+                                John placed an order
+                            </p>
+
+                            <span>
+                                2 hours ago
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Activity 2 -->
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon blue">
+                                👤
+                            </div>
+
+                            <p>
+                                Sarah updated her profile
+                            </p>
+
+                            <span>
+                                4 hours ago
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Activity 3 -->
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon purple">
+                                👥
+                            </div>
+
+                            <p>
+                                New user registered
+                            </p>
+
+                            <span>
+                                6 hours ago
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Activity 4 -->
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon green">
+                                ₹
+                            </div>
+
+                            <p>
+                                Payment received from Alex
+                            </p>
+
+                            <span>
+                                8 hours ago
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Activity 5 -->
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon orange">
+                                ✉
+                            </div>
+
+                            <p>
+                                Product added to inventory
+                            </p>
+
+                            <span>
+                                10 hours ago
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= USER DATA TABLE ================= -->
+
+            <section class="table-container">
+
+
+                <div class="panel-heading">
+
+                    <span>
+                        👥
+                    </span>
+
+                    <h3>
+                        User Data
+                    </h3>
+
+                </div>
+
+
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Name
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody>
+
+
+                            <!-- USER 1 -->
+
+                            <tr>
+
+                                <td>
+                                    John
+                                </td>
+
+                                <td>
+                                    john@mail.com
+                                </td>
+
+                                <td>
+
+                                    <span class="status active-status">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 2 -->
+
+                            <tr>
+
+                                <td>
+                                    Sarah
+                                </td>
+
+                                <td>
+                                    sarah@mail.com
+                                </td>
+
+                                <td>
+
+                                    <span class="status inactive-status">
+                                        Inactive
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 3 -->
+
+                            <tr>
+
+                                <td>
+                                    Alex
+                                </td>
+
+                                <td>
+                                    alex@mail.com
+                                </td>
+
+                                <td>
+
+                                    <span class="status active-status">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
 
 </body>
+
 </html>

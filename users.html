@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Users - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+
+                <div class="dashboard-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <h2>Dashboard</h2>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">⌂</span>
+                    <span>Home</span>
+                </a>
+
+                <a href="analytics.html" class="nav-item">
+                    <span class="nav-icon">▥</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="users.html" class="nav-item active">
+                    <span class="nav-icon">♟</span>
+                    <span>Users</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="search-box">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    class="search"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-circle">
+                    👤
+                </div>
+
+                <span>Admin</span>
+
+                <span class="dropdown">
+                    ⌄
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+
+            <!-- ================= PAGE HEADER ================= -->
+
+            <section class="page-header">
+
+                <h1>Users</h1>
+
+                <p>
+                    Manage registered users and their account status.
+                </p>
+
+            </section>
+
+
+
+            <!-- ================= USER DATA TABLE ================= -->
+
+            <section class="table-container">
+
+
+                <div class="panel-heading">
+
+                    <span>
+                        👥
+                    </span>
+
+                    <h3>
+                        All Users
+                    </h3>
+
+                </div>
+
+
+
+                <div class="table-wrapper">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Name
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+                                    Role
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Joined
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody>
+
+
+                            <!-- USER 1 -->
+
+                            <tr>
+
+                                <td>
+                                    Arjun Sharma
+                                </td>
+
+                                <td>
+                                    arjun@example.com
+                                </td>
+
+                                <td>
+                                    Admin
+                                </td>
+
+                                <td>
+
+                                    <span class="status active-status">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    Sep 10, 2026
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 2 -->
+
+                            <tr>
+
+                                <td>
+                                    Riya Patel
+                                </td>
+
+                                <td>
+                                    riya@example.com
+                                </td>
+
+                                <td>
+                                    User
+                                </td>
+
+                                <td>
+
+                                    <span class="status active-status">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    Sep 08, 2026
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 3 -->
+
+                            <tr>
+
+                                <td>
+                                    Vikram Kumar
+                                </td>
+
+                                <td>
+                                    vikram@example.com
+                                </td>
+
+                                <td>
+                                    User
+                                </td>
+
+                                <td>
+
+                                    <span class="status inactive-status">
+                                        Inactive
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    Sep 05, 2026
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 4 -->
+
+                            <tr>
+
+                                <td>
+                                    John
+                                </td>
+
+                                <td>
+                                    john@mail.com
+                                </td>
+
+                                <td>
+                                    User
+                                </td>
+
+                                <td>
+
+                                    <span class="status active-status">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    Sep 03, 2026
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- USER 5 -->
+
+                            <tr>
+
+                                <td>
+                                    Sarah
+                                </td>
+
+                                <td>
+                                    sarah@mail.com
+                                </td>
+
+                                <td>
+                                    User
+                                </td>
+
+                                <td>
+
+                                    <span class="status inactive-status">
+                                        Inactive
+                                    </span>
+
+                                </td>
+
+                                <td>
+                                    Aug 29, 2026
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
